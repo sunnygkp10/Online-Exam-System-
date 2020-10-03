@@ -22,6 +22,8 @@ let updateTime = setInterval(() => {
   second -= 1;
   let displayMinutes = Math.floor(second / 60);
   let displaySeconds = second - displayMinutes * 60;
+  
+  // display formatted time to the document
   countdown.innerText =
     "Time remaining: " + displayMinutes + ":" + displaySeconds;
 
