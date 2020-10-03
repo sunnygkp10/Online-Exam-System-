@@ -152,6 +152,7 @@ var countdownTimer = setInterval('secondPassed()', 1000);
             $get_time_limit = mysqli_query($con, "SELECT time FROM quiz WHERE eid='$eid'");
             $row = mysqli_fetch_object($get_time_limit);
             $second = $row->time * 60;
+	    // check if there is no session create a new session
             if (!isset($_SESSION['expire'])) {
               $_SESSION['expire'] = time() + $second;
             }
