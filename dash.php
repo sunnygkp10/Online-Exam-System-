@@ -92,7 +92,6 @@
         <!--home start-->
 
         <?php if (@$_GET['q'] == 0) {
-	
           unset($_SESSION['expire']);
           $result = mysqli_query($con, "SELECT * FROM quiz ORDER BY date DESC") or die('Error');
           echo  '<div class="panel"><table class="table table-striped title1">
