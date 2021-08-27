@@ -109,7 +109,9 @@ header("location:dash.php?q=0");
 }
 
 //quiz start
+
 if(@$_GET['q']== 'quiz' && @$_GET['step']== 2) {
+ // include 'Timer.php';
 $eid=@$_GET['eid'];
 $sn=@$_GET['n'];
 $total=@$_GET['t'];
